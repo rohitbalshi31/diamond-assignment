@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Pattern</title>
+</head>
+<body>
+    <h1>Print Diamond pattern in Javascript</h1>
+
+ <script type="text/javascript">
+    // for loop for printing the upper part of the diamond
+    for (var i = 0; i < 4; i++) {
+        var space = "";
+        for (var j = 5; j > i; j--) {
+            space += " ";
+        }
+        for(var k = 0; k <= i; k++) {
+            space +="*";
+        }
+        for(var l = 1; l <= i; l++) {
+            space += "*"
+        }
+        console.log(space);
+    }
+    // For loop for printing the lower part of the diamond
+    for (var i = 4; i >= 0; i--) {
+        var space = "";
+        for (var j = 5; j > i; j--) {
+            space += " ";
+        }
+        for(var k = 0; k <= i; k++) {
+            space +="*";
+        }
+        for(var l = 1; l <= i; l++) {
+            space += "*"
+        }
+        console.log(space);
+    }
+ </script>
+ 
+</body>
+</html>
